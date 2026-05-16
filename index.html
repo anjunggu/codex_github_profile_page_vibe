@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="문제를 제품으로 바꾸는 개발자 포트폴리오">
+    <meta property="og:title" content="Developer Portfolio">
+    <meta property="og:description" content="프론트엔드, 백엔드, 자동화를 연결해 실제로 쓰이는 제품을 만듭니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/hero-workspace.png">
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="홈으로 이동">Your Name</a>
+      <nav class="nav" aria-label="주요 섹션">
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="소개">
+        <img class="hero-image" src="assets/hero-workspace.png" alt="개발자 작업 공간 이미지">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Full-stack Developer Portfolio</p>
+          <h1>복잡한 문제를 단단한 제품 경험으로 바꾸는 개발자</h1>
+          <p class="hero-copy">
+            사용자 흐름, 데이터 구조, 배포 자동화까지 한 번에 생각하며 빠르게 만들고 오래 유지되는 소프트웨어를 지향합니다.
+          </p>
+          <div class="hero-actions" aria-label="주요 링크">
+            <a class="button primary" href="#work">프로젝트 보기</a>
+            <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stats" aria-label="주요 지표">
+        <div>
+          <strong>12+</strong>
+          <span>Shipped projects</span>
+        </div>
+        <div>
+          <strong>5</strong>
+          <span>Core stacks</span>
+        </div>
+        <div>
+          <strong>99%</strong>
+          <span>Care for polish</span>
+        </div>
+      </section>
+
+      <section class="section intro" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>사용자가 실제로 끝까지 쓰는 흐름을 설계합니다.</h2>
+        </div>
+        <p>
+          저는 아이디어를 빠르게 검증하고, 코드와 인터페이스 사이의 빈틈을 줄이는 일을 좋아합니다. 프론트엔드의 사용감,
+          백엔드의 안정성, 반복 업무를 줄이는 자동화를 함께 다루며 팀이 더 빠르게 학습하도록 돕습니다.
+        </p>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>프로젝트</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Web App</span>
+              <span>2026</span>
+            </div>
+            <h3>Insight Dashboard</h3>
+            <p>운영 데이터를 한 화면에서 비교하고 의사결정까지 이어지도록 설계한 대시보드입니다.</p>
+            <ul class="tag-list" aria-label="기술 스택">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Charts</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Automation</span>
+              <span>2025</span>
+            </div>
+            <h3>Workflow Assistant</h3>
+            <p>반복 리서치와 문서 생성을 자동화해 팀의 주간 업무 시간을 줄인 내부 도구입니다.</p>
+            <ul class="tag-list" aria-label="기술 스택">
+              <li>Python</li>
+              <li>OpenAI API</li>
+              <li>GitHub Actions</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Platform</span>
+              <span>2024</span>
+            </div>
+            <h3>Content Pipeline</h3>
+            <p>콘텐츠 수집, 정제, 게시 과정을 연결해 안정적인 배포 흐름을 만든 프로젝트입니다.</p>
+            <ul class="tag-list" aria-label="기술 스택">
+              <li>Node.js</li>
+              <li>SQLite</li>
+              <li>CI/CD</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>잘 다루는 일</h2>
+        </div>
+        <div class="skill-columns">
+          <div>
+            <h3>Product Frontend</h3>
+            <p>반응형 UI, 상태 관리, 접근성, 디자인 시스템을 제품 맥락에 맞춰 구현합니다.</p>
+          </div>
+          <div>
+            <h3>Backend & Data</h3>
+            <p>API 설계, 데이터 모델링, 인증, 배포 환경을 단순하고 명확하게 구성합니다.</p>
+          </div>
+          <div>
+            <h3>Automation</h3>
+            <p>스크립트, 워크플로, AI 도구를 엮어 반복 업무를 줄이고 결과물을 표준화합니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>함께 만들 프로젝트가 있다면 이야기해 주세요.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:your.email@example.com">Email</a>
+          <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span data-year></span> Your Name</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
