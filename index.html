@@ -1,109 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>도시계획기술사 & 건축사 포트폴리오</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: #e2e8f0; display: grid; gap: 30px; grid-template-columns: 1fr; padding: 40px 16px; place-items: center; }
-        .slide-container {
-            align-items: center; background-color: #fff; border-radius: 4px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            display: flex; flex-direction: column; font-family: "Noto Sans KR", sans-serif; height: 720px;
-            justify-content: center; overflow: hidden; padding: 60px; position: relative; width: min(1280px, 100%);
-        }
-        .slide-container::before {
-            content: ''; position: absolute; top: 0; right: 0; width: 350px; height: 350px;
-            background: linear-gradient(135deg, rgba(0, 51, 102, 0.07) 0%, transparent 100%);
-            clip-path: polygon(100% 0, 20% 0, 100% 80%); z-index: 0;
-        }
-        .slide-container > * { position: relative; z-index: 1; }
-        h1, h2, h3 { color: #003366; font-family: "Merriweather", serif; }
-        p, li { color: #334155; font-size: 19px; line-height: 1.5; word-break: keep-all; }
-        .main-title-box { border-left: 10px solid #005088; padding-left: 40px; text-align: left; width: 100%; }
-        h1 { font-size: 72px; font-weight: 700; line-height: 1.2; margin-bottom: 20px; color: #003366; }
-        .slide-title { font-size: 42px; font-weight: 700; margin-bottom: 40px; text-align: left; width: 100%; color: #005088; border-bottom: 2px solid #e2e8f0; padding-bottom: 15px; }
-        .content-area { display: flex; flex-direction: column; flex-grow: 1; justify-content: center; width: 100%; }
-        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; width: 100%; align-items: center; }
-        .image-wrapper { border-radius: 8px; height: 400px; overflow: hidden; width: 100%; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .image-wrapper img { height: 100%; object-fit: cover; width: 100%; }
-        .tiled-content { display: flex; gap: 25px; width: 100%; }
-        .tile { background-color: #f8fafc; border-top: 6px solid #005088; border-radius: 8px; flex: 1; padding: 40px; }
-        .tile .icon { color: #005088; font-size: 45px; margin-bottom: 20px; }
-        .tile h3 { font-size: 26px; margin-bottom: 15px; font-family: 'Noto Sans KR'; font-weight: 700; }
-        .highlight-box { text-align: center; padding: 20px; background: #f0f4f8; border-radius: 12px; }
-        .number { font-size: 80px; font-weight: 700; color: #005088; line-height: 1; }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="도시계획, 건축, 부동산을 하나의 관점으로 연결하는 전문가 포트폴리오"
+    />
+    <meta name="theme-color" content="#f2f0e9" />
+    <title>AJG — 도시의 가능성을 설계합니다</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-<div class="slide-container" style="background-color: #fffaf0;">
-    <div class="main-title-box">
-        <p style="font-size: 24px; color: #005088; font-weight: 700; margin-bottom: 15px; letter-spacing: 2px;">PROFESSIONAL PORTFOLIO</p>
-        <h1>도시계획기술사 & 건축사</h1>
-        <p class="subtitle" style="font-size: 28px; color: #64748b; font-family: 'Noto Sans KR'; margin-top: 15px;">도시의 공학적 정밀함และ 건축의 예술적 가치를 결합하다</p>
-    </div>
-    <div style="position: absolute; bottom: 60px; left: 60px; color: #94a3b8; font-size: 16px;">
-        Copyright © 2026. Urban & Architect Strategy Group. All rights reserved.
-    </div>
-</div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="처음으로">
+        <span class="brand-mark">AJG</span>
+        <span class="brand-line"></span>
+      </a>
 
-<div class="slide-container">
-    <h2 class="slide-title">Executive Vision</h2>
-    <div class="content-area">
-        <div class="two-column">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">메뉴 열기</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="주요 메뉴">
+        <a href="#about">소개</a>
+        <a href="#expertise">전문 영역</a>
+        <a href="#process">접근법</a>
+        <a class="nav-contact" href="#contact">연락하기</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+
+        <div class="hero-kicker reveal">
+          <span class="pulse"></span>
+          Urban · Architecture · Real Estate
+        </div>
+
+        <h1 class="hero-title reveal">
+          도시의 <em>가능성</em>을<br />
+          현실의 <em>가치</em>로.
+        </h1>
+
+        <div class="hero-footer reveal">
+          <p>
+            도시계획의 시야, 건축의 구체성, 부동산의 실행력을 연결해<br />
+            더 나은 장소와 지속 가능한 가치를 설계합니다.
+          </p>
+          <a class="round-link" href="#about" aria-label="소개로 이동">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4v16M6 14l6 6 6-6" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="coordinate" aria-hidden="true">
+          <span>37.5665° N</span>
+          <span>126.9780° E</span>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-label reveal">
+          <span>01</span>
+          <p>About</p>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow reveal">세 개의 언어로 공간을 읽습니다.</p>
+          <h2 class="section-title reveal">
+            계획의 큰 그림부터<br />
+            공간의 완성,<br />
+            자산의 가치까지.
+          </h2>
+          <div class="about-copy reveal">
+            <p>
+              도시는 계획만으로 완성되지 않고, 건축은 대지의 맥락 없이 존재하지 않으며,
+              부동산의 가치는 숫자만으로 설명되지 않습니다.
+            </p>
+            <p>
+              서로 다른 세 영역을 연결해 복잡한 문제의 핵심을 발견하고, 실행 가능한
+              해법으로 전환합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise" class="section expertise">
+        <div class="section-label light reveal">
+          <span>02</span>
+          <p>Expertise</p>
+        </div>
+
+        <div class="expertise-heading reveal">
+          <p class="eyebrow">Three perspectives, one vision</p>
+          <h2>경계를 넘어 보는<br />통합적 관점</h2>
+        </div>
+
+        <div class="expertise-list">
+          <article class="expertise-item reveal">
+            <span class="item-number">01</span>
             <div>
-                <h3 style="font-size: 30px; margin-bottom: 20px;">공학적 통찰로 설계하는<br>지속 가능한 미래 도시</h3>
-                <p>단순한 건축을 넘어 도시 전체의 맥락을 읽습니다. 도시계획기술사로서의 거시적 안목과 건축사로서의 미시적 정교함을 바탕으로, 시민의 삶의 질을 높이는 최적화된 공간 솔루션을 제안합니다.</p>
-                <div class="highlight-box" style="margin-top: 30px; display: flex; align-items: center; gap: 20px; text-align: left;">
-                    <div class="number">15+</div>
-                    <div><p style="font-weight: 700;">Years of Excellence</p><p style="font-size: 16px;">도시개발 및 건축 설계 분야 경력</p></div>
-                </div>
+              <h3>도시계획</h3>
+              <p class="en">Urban Planning</p>
             </div>
-            <div class="image-wrapper">
-                <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=1280" alt="Modern Cityscape">
+            <p class="item-copy">
+              도시의 구조와 흐름, 정책과 생활의 변화를 읽고 장기적인 공간 전략을
+              수립합니다.
+            </p>
+            <div class="item-symbol urban-symbol" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
             </div>
-        </div>
-    </div>
-</div>
+          </article>
 
-<div class="slide-container">
-    <h2 class="slide-title">Core Competencies</h2>
-    <div class="content-area">
-        <div class="tiled-content">
-            <div class="tile">
-                <div class="icon"><i class="fa-solid fa-compass-drafting"></i></div>
-                <h3>전략적 마스터플랜</h3>
-                <p>용도지역 분석 및 법규 검토를 통한 대규모 단지 마스터플랜 수립 및 사업 타당성 극대화</p>
+          <article class="expertise-item reveal">
+            <span class="item-number">02</span>
+            <div>
+              <h3>건축</h3>
+              <p class="en">Architecture</p>
             </div>
-            <div class="tile">
-                <div class="icon"><i class="fa-solid fa-draw-polygon"></i></div>
-                <h3>스마트 인프라 설계</h3>
-                <p>디지털 트윈 및 GIS 데이터를 활용한 데이터 기반 스마트 시티 인프라 구축 전략 수립</p>
+            <p class="item-copy">
+              장소의 잠재력과 사용자의 경험을 구체적인 공간과 설계의 언어로
+              구현합니다.
+            </p>
+            <div class="item-symbol architecture-symbol" aria-hidden="true">
+              <span></span><span></span><span></span>
             </div>
-            <div class="tile">
-                <div class="icon"><i class="fa-solid fa-building-shield"></i></div>
-                <h3>건축 및 경관 통합</h3>
-                <p>공인 건축사 자격을 바탕으로 개별 건축물의 기능성과 도시 경관의 조화를 고려한 통합 설계</p>
-            </div>
-        </div>
-    </div>
-</div>
+          </article>
 
-<div class="slide-container" style="background-color: #003366; color: white;">
-    <div class="content-area" style="text-align: center;">
-        <h2 style="color: white; font-size: 60px; margin-bottom: 20px;">Contact for Collaboration</h2>
-        <p style="color: #cbd5e1; font-size: 24px; margin-bottom: 60px;">도시의 새로운 가치를 만드는 통합 공간 전문가의 포트폴리오입니다.</p>
-        <div style="display: flex; justify-content: center; gap: 50px; font-size: 20px;">
-            <span><i class="fa-solid fa-envelope"></i> info@urban-architect.com</span>
-            <span><i class="fa-solid fa-globe"></i> portfolio.github.io</span>
+          <article class="expertise-item reveal">
+            <span class="item-number">03</span>
+            <div>
+              <h3>부동산</h3>
+              <p class="en">Real Estate</p>
+            </div>
+            <p class="item-copy">
+              시장과 입지, 사업성을 입체적으로 분석해 공간의 가능성을 지속 가능한
+              가치로 전환합니다.
+            </p>
+            <div class="item-symbol realestate-symbol" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+          </article>
         </div>
-    </div>
-</div>
+      </section>
 
-</body>
+      <section id="process" class="section process">
+        <div class="section-label reveal">
+          <span>03</span>
+          <p>Approach</p>
+        </div>
+
+        <div class="process-intro">
+          <p class="eyebrow reveal">From insight to impact</p>
+          <h2 class="section-title reveal">
+            좋은 해답은<br />
+            정확한 질문에서<br />
+            시작됩니다.
+          </h2>
+        </div>
+
+        <ol class="process-steps">
+          <li class="reveal">
+            <span>01</span>
+            <div>
+              <h3>맥락을 읽다</h3>
+              <p>장소, 사람, 정책, 시장을 살펴 문제의 진짜 구조를 파악합니다.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span>02</span>
+            <div>
+              <h3>가능성을 그리다</h3>
+              <p>서로 다른 관점을 연결해 가장 설득력 있는 시나리오를 만듭니다.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span>03</span>
+            <div>
+              <h3>가치를 실현하다</h3>
+              <p>아이디어를 실행 가능한 전략과 공간의 결과로 구체화합니다.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-map" aria-hidden="true">
+          <div class="map-street street-a"></div>
+          <div class="map-street street-b"></div>
+          <div class="map-street street-c"></div>
+          <div class="map-street street-d"></div>
+        </div>
+        <p class="eyebrow reveal">Start a conversation</p>
+        <h2 class="reveal">함께, 다음 장소의<br />가능성을 이야기해요.</h2>
+        <a class="email-link reveal" href="mailto:anjungguan@gmail.com">
+          <span>anjungguan@gmail.com</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 19 19 5M8 5h11v11" />
+          </svg>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top"><span class="brand-mark">AJG</span></a>
+      <p>Urban Planning · Architecture · Real Estate</p>
+      <p>© <span id="year"></span> AJG. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
